@@ -11,7 +11,7 @@ json_data = json.dumps({"text": data})
 
 if st.button('Send'):
     headers = {"Content-Type": "application/json"}
-    res = requests.post(url="https://quiet-caverns-91030.herokuapp.com/predict", data=json_data, headers=headers)
+    res = requests.post(url="https://calm-garden-60655.herokuapp.com/predict", data=json_data, headers=headers)
     result = res.json()
     language = result["language"]
     st.subheader(f"Hack Bot: {language}")
